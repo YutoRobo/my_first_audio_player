@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name my_first_audio_player-rescue)(type Legacy)(uri ${KIPRJMOD}/my_first_audio_player-rescue.lib)(options "")(descr ""))
+)
