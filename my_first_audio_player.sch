@@ -75,18 +75,6 @@ Connection ~ 9300 1050
 Wire Wire Line
 	9200 1050 9300 1050
 $Comp
-L Amplifier_Operational:OPA2134 U5
-U 2 1 60C52CFE
-P 8250 4900
-F 0 "U5" H 8250 5267 50  0000 C CNN
-F 1 "OPA2134" H 8250 5176 50  0000 C CNN
-F 2 "OPA2134UA:SOIC127P599X175-8N" H 8250 4900 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/opa134.pdf" H 8250 4900 50  0001 C CNN
-	2    8250 4900
-	1    0    0    1   
-$EndComp
-Connection ~ 8550 4900
-$Comp
 L Device:C C11
 U 1 1 60B5CCC7
 P 7050 4750
@@ -107,23 +95,8 @@ Wire Wire Line
 Connection ~ 7150 4550
 Wire Wire Line
 	7150 4550 7250 4550
-Wire Wire Line
-	6900 4550 7050 4550
-Wire Wire Line
-	7050 4200 7050 4550
-Connection ~ 6900 4550
-Connection ~ 7250 4550
-Text Label 6500 4400 1    50   ~ 0
-R2L_1
 Text Label 6450 4550 2    50   ~ 0
 VL-
-Wire Wire Line
-	6500 4550 6550 4550
-Connection ~ 6500 4550
-Wire Wire Line
-	6500 4400 6500 4550
-Wire Wire Line
-	6450 4550 6500 4550
 Text Notes 6850 7750 2    100  ~ 0
 DAC Hardware Setup
 Text Notes 6300 7600 2    50   ~ 0
@@ -216,7 +189,6 @@ Text Label 5350 6600 2    50   ~ 0
 FMT2
 Text Label 5650 6600 0    50   ~ 0
 +VCC
-Connection ~ 7150 5350
 Text Notes 5100 4550 2    100  ~ 0
 DAC
 Wire Wire Line
@@ -496,216 +468,6 @@ Wire Wire Line
 	4400 3200 4500 3200
 Text Label 3450 3200 2    50   ~ 0
 +3V3
-Connection ~ 10450 4550
-Wire Wire Line
-	10450 4500 10450 4550
-Text Label 10450 4500 1    50   ~ 0
-C3R_2
-Text Label 10150 4500 1    50   ~ 0
-C3R_1
-Connection ~ 10150 4550
-Wire Wire Line
-	10150 4500 10150 4550
-Connection ~ 9700 4550
-Wire Wire Line
-	9700 4500 9700 4550
-Wire Wire Line
-	10050 4550 10100 4550
-Connection ~ 10050 4550
-Wire Wire Line
-	10050 4500 10050 4550
-Text Label 10050 4500 1    50   ~ 0
-R6R_2
-Text Label 9700 4500 1    50   ~ 0
-R6R_1
-Wire Wire Line
-	8950 4950 9000 4950
-Connection ~ 8950 4950
-Wire Wire Line
-	8950 5150 8950 4950
-Wire Wire Line
-	9350 4950 9500 4950
-Connection ~ 9350 4950
-Wire Wire Line
-	9350 5150 9350 4950
-Wire Wire Line
-	9500 5150 9500 4950
-Wire Wire Line
-	8900 4950 8950 4950
-Wire Wire Line
-	9300 4950 9350 4950
-Text Label 9500 5150 3    50   ~ 0
-C1R_2
-Text Label 8950 5150 3    50   ~ 0
-R1R_1
-Text Label 9350 5150 3    50   ~ 0
-R1R_2
-Connection ~ 9600 5350
-Wire Wire Line
-	9700 5350 9600 5350
-Wire Wire Line
-	9650 4950 9700 4950
-Connection ~ 9650 4950
-Wire Wire Line
-	9650 5050 9650 4950
-Wire Wire Line
-	9700 5050 9650 5050
-Text Label 9700 5350 0    50   ~ 0
-R3R_2
-Text Label 9700 5050 0    50   ~ 0
-R3R_1
-Connection ~ 9700 4950
-Wire Wire Line
-	9700 4900 9700 4950
-Wire Wire Line
-	10050 4900 10050 4950
-Text Label 10050 4900 1    50   ~ 0
-R5R_2
-Text Label 9700 4900 1    50   ~ 0
-R5R_1
-Wire Wire Line
-	10150 4950 10050 4950
-Connection ~ 10150 4950
-Wire Wire Line
-	10150 5100 10150 4950
-Wire Wire Line
-	10200 5100 10150 5100
-Connection ~ 10050 5350
-Wire Wire Line
-	10200 5350 10050 5350
-Text Label 10200 5350 0    50   ~ 0
-C2R_2
-Text Label 10200 5100 0    50   ~ 0
-C2R_1
-Wire Wire Line
-	10050 4200 10550 4200
-Connection ~ 10050 4200
-Wire Wire Line
-	10050 4050 10050 4200
-Text Label 10050 4050 1    50   ~ 0
-R4R_2
-Wire Wire Line
-	9650 4200 9600 4200
-Connection ~ 9650 4200
-Wire Wire Line
-	9650 4050 9650 4200
-Text Label 9650 4050 1    50   ~ 0
-R4R_1
-Wire Wire Line
-	8950 4550 9000 4550
-Connection ~ 8950 4550
-Wire Wire Line
-	8950 4200 8950 4550
-Wire Wire Line
-	9350 4550 9500 4550
-Connection ~ 9350 4550
-Wire Wire Line
-	9350 4200 9350 4550
-Wire Wire Line
-	9500 4200 9500 4550
-Text Label 9500 4200 1    50   ~ 0
-C1R_1
-Text Label 9350 4200 1    50   ~ 0
-R2R_2
-Text Label 8950 4200 1    50   ~ 0
-R2R_1
-Wire Wire Line
-	8050 4550 8000 4550
-Connection ~ 8050 4550
-Wire Wire Line
-	8050 4500 8050 4550
-Text Label 8050 4500 1    50   ~ 0
-C3L_2
-Connection ~ 7700 4550
-Wire Wire Line
-	7700 4500 7700 4550
-Text Label 7700 4500 1    50   ~ 0
-C3L_1
-Connection ~ 7600 5350
-Wire Wire Line
-	7750 5350 7600 5350
-Wire Wire Line
-	7700 4950 7600 4950
-Connection ~ 7700 4950
-Wire Wire Line
-	7700 5100 7700 4950
-Wire Wire Line
-	7750 5100 7700 5100
-Text Label 7750 5350 0    50   ~ 0
-C2L_2
-Text Label 7750 5100 0    50   ~ 0
-C2L_1
-Wire Wire Line
-	7250 5350 7150 5350
-Text Label 7250 5350 0    50   ~ 0
-R3L_2
-Connection ~ 7150 5000
-Wire Wire Line
-	7250 5000 7150 5000
-Wire Wire Line
-	7250 5050 7250 5000
-Text Label 7250 5050 0    50   ~ 0
-R3L_1
-Wire Wire Line
-	7600 4900 7600 4950
-Text Label 7600 4900 1    50   ~ 0
-R5L_2
-Connection ~ 7250 4950
-Wire Wire Line
-	7250 4900 7250 4950
-Text Label 7250 4900 1    50   ~ 0
-R5L_1
-Connection ~ 7600 4550
-Wire Wire Line
-	7600 4550 7650 4550
-Wire Wire Line
-	7550 4550 7600 4550
-Wire Wire Line
-	7600 4500 7600 4550
-Wire Wire Line
-	7250 4500 7250 4550
-Wire Wire Line
-	7600 4200 8100 4200
-Connection ~ 7600 4200
-Wire Wire Line
-	7600 4050 7600 4200
-Wire Wire Line
-	7200 4200 7150 4200
-Connection ~ 7200 4200
-Wire Wire Line
-	7200 4050 7200 4200
-Text Label 7600 4500 1    50   ~ 0
-R6L_2
-Text Label 7250 4500 1    50   ~ 0
-R6L_1
-Text Label 7600 4050 1    50   ~ 0
-R4L_2
-Text Label 7200 4050 1    50   ~ 0
-R4L_1
-Wire Wire Line
-	7050 5200 7050 4950
-Text Label 7050 5200 3    50   ~ 0
-C1L_2
-Text Label 7050 4200 1    50   ~ 0
-C1L_1
-Wire Wire Line
-	6500 4950 6550 4950
-Connection ~ 6500 4950
-Wire Wire Line
-	6500 5200 6500 4950
-Wire Wire Line
-	6900 4950 7050 4950
-Connection ~ 6900 4950
-Wire Wire Line
-	6900 5200 6900 4950
-Wire Wire Line
-	6900 4200 6900 4550
-Text Label 6500 5200 3    50   ~ 0
-R1L_1
-Text Label 6900 5200 3    50   ~ 0
-R1L_2
-Text Label 6900 4200 1    50   ~ 0
-R2L_2
 $Comp
 L my_first_audio_player-rescue:B2B-PH-SM4-TB(LF)(SN)-B2B-PH-SM4-TB_LF_SN J1
 U 1 1 60A3660B
@@ -982,8 +744,6 @@ Wire Wire Line
 	10550 4200 11000 4200
 Connection ~ 10050 4950
 Wire Wire Line
-	10300 4950 10150 4950
-Wire Wire Line
 	10300 5000 10300 4950
 Wire Wire Line
 	10400 5000 10300 5000
@@ -994,8 +754,6 @@ Wire Wire Line
 	10100 4800 10100 4550
 Wire Wire Line
 	10400 4800 10100 4800
-Wire Wire Line
-	8900 4550 8950 4550
 Text Label 8900 4950 2    50   ~ 0
 VR+
 Text Label 8900 4550 2    50   ~ 0
@@ -1045,10 +803,6 @@ Wire Wire Line
 	10550 4550 10450 4550
 Wire Wire Line
 	10550 4200 10550 4550
-Wire Wire Line
-	10000 4200 10050 4200
-Wire Wire Line
-	10000 4550 10050 4550
 $Comp
 L Device:C C16
 U 1 1 60CA6B2B
@@ -1065,8 +819,6 @@ Wire Wire Line
 Connection ~ 9600 4550
 Wire Wire Line
 	9600 4200 9600 4550
-Wire Wire Line
-	9700 4200 9650 4200
 $Comp
 L Device:R R13
 U 1 1 60CA6B21
@@ -1078,8 +830,6 @@ F 3 "~" H 9850 4200 50  0001 C CNN
 	1    9850 4200
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	9600 4950 9650 4950
 Connection ~ 9600 4950
 Wire Wire Line
 	9600 5000 9600 4950
@@ -1093,8 +843,6 @@ Wire Wire Line
 Connection ~ 9500 4550
 Wire Wire Line
 	9500 4600 9500 4550
-Wire Wire Line
-	9300 4550 9350 4550
 $Comp
 L Device:R R12
 U 1 1 60CA6B10
@@ -1172,8 +920,6 @@ Wire Wire Line
 	8100 4200 8550 4200
 Connection ~ 7600 4950
 Wire Wire Line
-	7850 4950 7700 4950
-Wire Wire Line
 	7850 5000 7850 4950
 Wire Wire Line
 	7950 5000 7850 5000
@@ -1184,8 +930,6 @@ Wire Wire Line
 	7650 4800 7650 4550
 Wire Wire Line
 	7950 4800 7650 4800
-Wire Wire Line
-	6450 4950 6500 4950
 Text Label 6450 4950 2    50   ~ 0
 VL+
 Wire Wire Line
@@ -1219,24 +963,7 @@ $EndComp
 Wire Wire Line
 	7150 5300 7150 5350
 Wire Wire Line
-	8100 4550 8050 4550
-Wire Wire Line
 	8100 4200 8100 4550
-Wire Wire Line
-	7550 4200 7600 4200
-$Comp
-L Device:C C13
-U 1 1 60B881FD
-P 7850 4550
-F 0 "C13" V 7598 4550 50  0000 C CNN
-F 1 "C3L" V 7689 4550 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 7888 4400 50  0001 C CNN
-F 3 "~" H 7850 4550 50  0001 C CNN
-	1    7850 4550
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7250 4200 7200 4200
 $Comp
 L Device:R R7
 U 1 1 60B81D38
@@ -1258,10 +985,6 @@ Wire Wire Line
 Connection ~ 7050 4950
 Wire Wire Line
 	7050 4900 7050 4950
-Wire Wire Line
-	6850 4950 6900 4950
-Wire Wire Line
-	6850 4550 6900 4550
 $Comp
 L Device:R R6
 U 1 1 60B5E552
@@ -2463,4 +2186,65 @@ NoConn ~ 3900 5900
 NoConn ~ 3100 5800
 NoConn ~ 3100 6000
 NoConn ~ 3100 6200
+Wire Wire Line
+	6450 4550 6550 4550
+Wire Wire Line
+	6850 4550 7050 4550
+Wire Wire Line
+	7150 4200 7250 4200
+Wire Wire Line
+	7550 4200 8100 4200
+Wire Wire Line
+	7550 4550 7650 4550
+$Comp
+L Device:C C13
+U 1 1 60B881FD
+P 7850 4550
+F 0 "C13" V 7598 4550 50  0000 C CNN
+F 1 "C3L" V 7689 4550 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7888 4400 50  0001 C CNN
+F 3 "~" H 7850 4550 50  0001 C CNN
+	1    7850 4550
+	0    1    1    0   
+$EndComp
+Connection ~ 8550 4900
+$Comp
+L Amplifier_Operational:OPA2134 U5
+U 2 1 60C52CFE
+P 8250 4900
+F 0 "U5" H 8250 5267 50  0000 C CNN
+F 1 "OPA2134" H 8250 5176 50  0000 C CNN
+F 2 "OPA2134UA:SOIC127P599X175-8N" H 8250 4900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/opa134.pdf" H 8250 4900 50  0001 C CNN
+	2    8250 4900
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	8000 4550 8100 4550
+Wire Wire Line
+	7600 4950 7850 4950
+Wire Wire Line
+	6450 4950 6550 4950
+Wire Wire Line
+	6850 4950 7050 4950
+Wire Wire Line
+	9600 4200 9700 4200
+Wire Wire Line
+	9300 4550 9500 4550
+Wire Wire Line
+	8900 4550 9000 4550
+Wire Wire Line
+	10000 4200 10550 4200
+Wire Wire Line
+	10000 4550 10100 4550
+Wire Wire Line
+	10050 4950 10300 4950
+Wire Wire Line
+	9600 4950 9700 4950
+Wire Wire Line
+	9300 4950 9500 4950
+Wire Wire Line
+	8900 4950 9000 4950
+Wire Wire Line
+	10050 4900 10050 4950
 $EndSCHEMATC
