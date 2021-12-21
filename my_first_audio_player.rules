@@ -11,18 +11,18 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 6923)
+    (start_pass_no 4615)
     (layer_rule F.Cu
       (active on)
       (preferred_direction vertical)
       (preferred_direction_trace_costs 1.0)
-      (against_preferred_direction_trace_costs 2.2)
+      (against_preferred_direction_trace_costs 2.7)
     )
     (layer_rule B.Cu
       (active on)
       (preferred_direction horizontal)
       (preferred_direction_trace_costs 1.0)
-      (against_preferred_direction_trace_costs 1.8)
+      (against_preferred_direction_trace_costs 1.6)
     )
   )
   (rule
@@ -72,14 +72,10 @@
     "Net-(C1-Pad1)" /+VBAT "Net-(C4-Pad1)" "Net-(C8-Pad1)" "Net-(C18-Pad2)" "Net-(C18-Pad1)" /+VUSB "Net-(F1-Pad2)"
     "Net-(J2-Pad4)" "Net-(J2-Pad3)" "Net-(J2-Pad2)" /DATA /BCK /LRCK /SCK "Net-(Q1-Pad1)"
     "Net-(Q1-Pad2)" "Net-(R1-Pad1)" "Net-(S1-Pad3)" "Net-(U1-Pad4)" /ZEROL /ZEROR /+VCC "/-VCC"
-    "/CPU_EN" /BOOT /RXD0 /TXD0 "Net-(J7-Pad10)" "Net-(J7-Pad8)" "/SD_MISO" "/SD_SCK"
-    "/SD_MOSI" "/SD_CS" "Net-(U4-Pad37)" "Net-(U4-Pad36)" "Net-(U4-Pad29)" "Net-(U4-Pad26)" "Net-(U4-Pad22)" "Net-(U4-Pad21)"
-    "Net-(U4-Pad20)" "Net-(U4-Pad19)" "Net-(U4-Pad18)" "Net-(U4-Pad17)" "Net-(U4-Pad14)" "Net-(U4-Pad12)" "Net-(U4-Pad9)" "Net-(U4-Pad8)"
-    "Net-(U4-Pad7)" "Net-(U4-Pad6)" "Net-(U4-Pad5)" "Net-(U4-Pad4)" "Net-(U7-Pad4)" /SW3 /SW1 /SW4
-    /SW2 "/DATA_U_I2S" "/LRCK_U_I2S" "/BCK_U_I2S" "/SCK_U_I2S" "Net-(J5-Pad2)" "Net-(S2-PadS1)" "/CPU_+3V3"
+    "Net-(U7-Pad4)" "/DATA_U_I2S" "/LRCK_U_I2S" "/BCK_U_I2S" "/SCK_U_I2S" "Net-(J5-Pad2)" "Net-(S2-PadS1)" "/CPU_+3V3"
     "Net-(S2-Pad16)" "Net-(S2-Pad15)" "Net-(S2-Pad14)" "Net-(S2-Pad13)" "/BCK_C_I2S" "/LRCK_C_I2S" "/DATA_C_I2S" "Net-(C11-Pad1)"
     "Net-(C11-Pad2)" "Net-(C12-Pad1)" "Net-(C13-Pad2)" "/L-CHAN" "Net-(C14-Pad1)" "Net-(C14-Pad2)" "Net-(C15-Pad1)" "Net-(C16-Pad2)"
-    "/R-CHAN" "/VL-" /VL+ "/VR-" /VR+
+    "/R-CHAN" "/VL-" /VL+ "/VR-" /VR+ "/SCK_C_I2S"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
